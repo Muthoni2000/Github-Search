@@ -16,3 +16,13 @@ export class HighlightDirective {
   @HostListener('mouseenter') onMouseEnter() {
     this.highlight(this.highlightColor || 'lightblue');
   }
+
+  @HostListener('mouseleave') onMouseLeave() {
+    this.highlight(null);
+  }
+
+  private highlight(color: string) {
+    this.el.style.backgroundColor = color;
+  }
+}
+
