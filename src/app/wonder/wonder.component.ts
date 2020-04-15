@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './wonder.component.html',
   styleUrls: ['./wonder.component.css']
 })
-export class NotFoundComponent implements OnInit {
+export class WonderComponent implements OnInit {
 
   constructor() { }
 
